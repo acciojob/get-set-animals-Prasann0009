@@ -4,11 +4,14 @@ class Animal {
     {
        this._species=species;
     }
-
-    get makeSound()
-    {
-        return this._species;
-    }
+    get species()
+	{
+		return this._species;
+	}
+   makeSound()
+	{
+		console.log("Animal Sound");
+	}
 }
 
 class Dog extends Animal {
